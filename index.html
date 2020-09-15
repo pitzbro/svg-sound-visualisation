@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Page Title</title>
+
+    <style>
+        body {
+            background-color: #fff;
+            margin: 10% 2px 5px 2px;
+        }
+
+        .header {
+            width: 100%;
+            padding: ;
+            margin: auto;
+        }
+
+        .svg1 {
+
+            fill: rgba(40, 40, 50, 0.3);
+            stroke-width: 2;
+            width: 100%;
+            /* stroke-dasharray: 0 3000; */
+            /* animation: pulse1 3s linear infinite; */
+            z-index: 1;
+        }
+
+        .sound-wave {
+            width: 100%;
+        }
+
+        polygon {
+            fill: #000;
+        }
+
+        @keyframes pulse1 {
+            from {
+                stroke-dasharray: 0 3000;
+            }
+
+            to {
+                stroke-dasharray: 3000 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="svg1">
+        <svg class="sound-wave" xmlns="http://www.w3.org/2000/svg" version="1.1" width="400px" height="375px" viewBox="0 0 400 400" class="svg1">
+
+                <polygon
+                    class="polygon"
+                    points=""
+                    stroke="url(#grad1)" fill="none">
+                    <animate 
+                        dur="10s" 
+                        fill="freeze" 
+                        attributeName="points"
+                        repeatCount="indefinite"
+                        animation-direction="alternate"
+                        calcMode="linear"
+                        to="" />
+                </polygon>
+        </svg>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
